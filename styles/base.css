@@ -1,113 +1,184 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Albertus Medium", serif;
   margin: 0;
-  background: #f5f5f5;
+  background: #f4f7f2;
+  color: #222;
 }
 
 /* HEADER */
+
 header {
-  background: #1f4e79;
+  background: #2f5d50;
   color: white;
   text-align: center;
 }
 
 #course-title {
   display: block;
-  padding: 15px;
+  padding: 18px;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
-/* NAV */
+/* NAVIGATION */
+
 nav {
   display: flex;
   justify-content: space-around;
-  background: #2f2f2f;
+  background: #3f6f61;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 12px 20px;
+  padding: 14px 20px;
   display: block;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  background: #444;
+  background: #567f72;
 }
 
 /* MAIN LAYOUT */
+
 main {
-  max-width: 1000px;
-  margin: 20px auto;
+  max-width: 1200px;
+  margin: 40px auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 20px;
+  gap: 30px;
+  align-items: start;
+  padding: 0 20px;
 }
 
-/* TITLE */
+/* MAIN TITLE */
+
 main h1 {
   grid-column: 1 / -1;
   text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #2f5d50;
 }
 
 /* CARDS */
+
 .card {
   background: white;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
-/* TEXT JUSTIFY */
+/* CARD TITLES */
+
+.card h2,
+.card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f5d50;
+}
+
+/* PARAGRAPHS */
+
 .card p {
   text-align: justify;
+  line-height: 1.7;
+}
+
+/* ABOUT ME SECTION */
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
 }
 
 /* PROFILE IMAGE */
-.card img {
-  width: 150px;
-  float: right;
-  margin-left: 15px;
-  border-radius: 5px;
+
+.profile-image {
+  width: 190px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-/* COUNTRY SECTION (PERU) */
+/* COUNTRY SECTION */
+
 .country {
-  margin-top: 15px;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #d6e2db;
 }
 
 .country img {
-  width: 120px;
-  float: left;
-  margin-right: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  width: 140px;
+  border-radius: 8px;
+  border: 1px solid #b8cfc4;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 .country p {
-  text-align: justify;
+  margin: 0;
 }
 
-/* LINKS */
+/* RESOURCES */
+
 .card ul {
-  padding-left: 20px;
+  padding-left: 25px;
+}
+
+.card ul li {
+  margin-bottom: 12px;
 }
 
 .card ul li a {
   text-decoration: none;
-  color: #1f4e79;
+  color: #2f5d50;
+  font-weight: bold;
 }
 
 .card ul li a:hover {
   text-decoration: underline;
+  color: #4d7d6e;
 }
 
 /* FOOTER */
+
 footer {
   text-align: center;
-  padding: 15px;
-  background: #1f4e79;
+  padding: 20px;
+  background: #2f5d50;
   color: white;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .country {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card p {
+    text-align: justify;
+  }
 }
