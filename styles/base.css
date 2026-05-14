@@ -58,7 +58,12 @@ main h1 {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-/* ABOUT ME LAYOUT */
+/* TEXT JUSTIFY */
+.card p {
+  text-align: justify;
+}
+
+/* PROFILE IMAGE */
 .card img {
   width: 150px;
   float: right;
@@ -66,9 +71,36 @@ main h1 {
   border-radius: 5px;
 }
 
-/* RESOURCES */
+/* COUNTRY SECTION (PERU) */
+.country {
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.country img {
+  width: 120px;
+  float: left;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.country p {
+  text-align: justify;
+}
+
+/* LINKS */
 .card ul {
   padding-left: 20px;
+}
+
+.card ul li a {
+  text-decoration: none;
+  color: #1f4e79;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
