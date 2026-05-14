@@ -1,57 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
 
-  <title>WDD 131 – Dynamic Web Fundamentals – Nefi Moroni Escobedo Miranda</title>
+header {
+  background: #1f4e79;
+  color: white;
+  text-align: center;
+}
 
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Nefi Moroni Escobedo Miranda. Personal homepage with course work and resources.">
-  <meta name="author" content="Nefi Moroni Escobedo Miranda">
+#course-title {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
 
-  <link rel="stylesheet" href="styles/base.css">
-  <script defer src="scripts/getdates.js"></script>
-</head>
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+}
 
-<body>
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
 
-<header>
-  <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+nav a:hover {
+  background: #555;
+}
 
-  <nav>
-    <a href="https://www.linkedin.com">LinkedIn</a>
-    <a href="https://byupw.instructure.com/">Canvas</a>
-    <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-    <a href="#">Final Project</a>
-  </nav>
-</header>
+main {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-<main>
-  <h1>Nefi Moroni Escobedo Miranda</h1>
-
-  <section class="card">
-    <h2>About Me</h2>
-    <p>...</p>
-    <img src="images/profile.jpg" alt="My photo">
-  </section>
-
-  <section class="card">
-    <h2>Web Dev Resources</h2>
-    <ul>
-      <li>Dev.to</li>
-      <li>CSS Tricks</li>
-      <li>W3 Schools</li>
-    </ul>
-  </section>
-</main>
-
-<footer>
-  <p>
-    © <span id="currentyear"></span> Nefi Moroni Escobedo Miranda – Peru
-  </p>
-
-  <p id="lastModified"></p>
-</footer>
-
-</body>
-</html>
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
