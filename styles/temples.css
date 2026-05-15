@@ -10,8 +10,6 @@ body {
     color: #222222;
 }
 
-/* HEADER */
-
 header {
     background-color: #003049;
     color: #ffffff;
@@ -36,8 +34,6 @@ header h1 {
     cursor: pointer;
 }
 
-/* NAVIGATION */
-
 nav {
     display: none;
     flex-direction: column;
@@ -60,8 +56,6 @@ nav a:hover {
     background-color: #669bbc;
 }
 
-/* MAIN */
-
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -73,8 +67,6 @@ main h2 {
     margin-bottom: 2rem;
     color: #003049;
 }
-
-/* GALLERY */
 
 .gallery {
     display: grid;
@@ -100,8 +92,6 @@ figcaption {
     margin-top: 0.75rem;
     font-weight: 700;
 }
-
-/* FOOTER */
 
 footer {
     background-color: #003049;

@@ -16,12 +16,8 @@ menuButton.addEventListener("click", () => {
     }
 });
 
-/* Footer current year */
-
 document.querySelector("#currentyear").textContent =
     new Date().getFullYear();
-
-/* Last modified */
 
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
