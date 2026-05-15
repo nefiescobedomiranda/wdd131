@@ -7,14 +7,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
-    color: #222;
+    color: #222222;
 }
 
 /* HEADER */
 
 header {
     background-color: #003049;
-    color: white;
+    color: #ffffff;
     padding: 1rem;
 }
 
@@ -31,7 +31,7 @@ header h1 {
 #menu-button {
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -50,7 +50,7 @@ nav.open {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     padding: 1rem;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -83,10 +83,10 @@ main h2 {
 }
 
 figure {
-    background-color: white;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px #d9d9d9;
     text-align: center;
 }
 
@@ -98,14 +98,14 @@ figure img {
 
 figcaption {
     margin-top: 0.75rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* FOOTER */
 
 footer {
     background-color: #003049;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
