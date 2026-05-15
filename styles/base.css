@@ -5,8 +5,6 @@ body {
   color: #222222;
 }
 
-/* HEADER */
-
 header {
   background: #2f5d50;
   color: #ffffff;
@@ -19,8 +17,6 @@ header {
   font-weight: bold;
   font-size: 1.3rem;
 }
-
-/* NAVIGATION */
 
 nav {
   display: flex;
@@ -40,8 +36,6 @@ nav a:hover {
   background: #567f72;
 }
 
-/* MAIN LAYOUT */
-
 main {
   max-width: 1200px;
   margin: 40px auto;
@@ -52,8 +46,6 @@ main {
   padding: 0 20px;
 }
 
-/* MAIN TITLE */
-
 main h1 {
   grid-column: 1 / -1;
   text-align: center;
@@ -62,16 +54,12 @@ main h1 {
   color: #2f5d50;
 }
 
-/* CARDS */
-
 .card {
   background: #ffffff;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 0 10px #00000014;
 }
-
-/* CARD TITLES */
 
 .card h2,
 .card h3 {
@@ -80,14 +68,10 @@ main h1 {
   color: #2f5d50;
 }
 
-/* PARAGRAPHS */
-
 .card p {
   text-align: justify;
   line-height: 1.7;
 }
-
-/* ABOUT ME SECTION */
 
 .about-content {
   display: flex;
@@ -99,15 +83,11 @@ main h1 {
   flex: 1;
 }
 
-/* PROFILE IMAGE */
-
 .profile-image {
   width: 190px;
   border-radius: 10px;
   box-shadow: 0 0 8px #00000033;
 }
-
-/* COUNTRY SECTION */
 
 .country {
   display: flex;
@@ -129,8 +109,6 @@ main h1 {
   margin: 0;
 }
 
-/* RESOURCES */
-
 .card ul {
   padding-left: 25px;
 }
@@ -150,8 +128,6 @@ main h1 {
   color: #4d7d6e;
 }
 
-/* FOOTER */
-
 footer {
   text-align: center;
   padding: 20px;
@@ -159,8 +135,6 @@ footer {
   color: #ffffff;
   margin-top: 40px;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 768px) {
 
