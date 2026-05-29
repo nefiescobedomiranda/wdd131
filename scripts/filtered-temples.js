@@ -71,7 +71,7 @@ temples.push(
     dedicated: "1986, January, 17",
     area: 30659,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/800x500/buenos-aires-argentina-temple-lds-236979-wallpaper.jpg"
-  }
+  },
   {
   templeName: "Caracas Venezuela",
   location: "Caracas, Venezuela",
