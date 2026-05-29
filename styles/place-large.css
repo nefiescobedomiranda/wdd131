@@ -1,39 +1,57 @@
 @media screen and (min-width: 800px) {
+
     main {
+
         position: relative;
     }
 
     .card {
+
         position: absolute;
+
         width: 320px;
+
         background-color: var(--transparent-white);
+
         border-radius: 0;
     }
 
     .card h2 {
+
         background-color: var(--blue);
+
         color: var(--white);
+
         padding: 1rem;
+
         text-align: left;
+
         margin-left: -30px;
+
         width: 95%;
     }
 
     .data {
+
         top: 40px;
+
         left: 30px;
     }
 
     .weather {
+
         bottom: 40px;
+
         right: 30px;
     }
 
     .weather h2::after {
+
         content: " ☀";
     }
 
     .weather-icon {
+
         display: none;
     }
 }
