@@ -72,7 +72,7 @@ temples.push(
     area: 30659,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires/400x250/buenos-aires-temple.jpg"
   }
-];
+);
 
 // SELECT
 const gallery = document.querySelector(".gallery");
