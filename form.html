@@ -1,95 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Product Review Form</title>
+    <title>Product Review</title>
 
-  <meta name="description" content="Product review form for industrial equipment evaluation and feedback submission.">
-  <meta name="author" content="Nefi Moroni Escobedo Miranda">
+    <meta name="description" content="Product review form for industrial equipment evaluation and feedback submission.">
+    <meta name="author" content="Nefi Moroni Escobedo Miranda">
 
-  <link rel="stylesheet" href="styles/form.css">
-  <script defer src="scripts/form.js"></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
 </head>
 
 <body>
 
 <header>
-  <h1>Product Review</h1>
+    <h1>Product Review</h1>
 </header>
 
 <main>
 
-  <form action="review.html" method="get">
+    <form action="review.html" method="get">
 
-    <!-- PRODUCT -->
-    <label for="product">Product Name</label>
-    <select id="product" name="product" required>
-      <option value="" disabled selected>Select a Product ...</option>
-    </select>
+        <!-- PRODUCT -->
+        <label for="product">Product Name</label>
 
-    <!-- RATING (FIXED) -->
-    <fieldset>
-      <legend>Overall Rating</legend>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Choose a Product ...</option>
+        </select>
 
-      <input type="radio" id="r1" name="rating" value="1" required>
-      <label for="r1">1 ☆</label>
+        <!-- RATING -->
+        <fieldset class="rating-group">
+            <legend>Overall Rating</legend>
 
-      <input type="radio" id="r2" name="rating" value="2" required>
-      <label for="r2">2 ☆</label>
+            <div class="rating-options">
 
-      <input type="radio" id="r3" name="rating" value="3" required>
-      <label for="r3">3 ☆</label>
+                <div>
+                    <label for="r1">☆</label>
+                    <input type="radio" id="r1" name="rating" value="1" required>
+                </div>
 
-      <input type="radio" id="r4" name="rating" value="4" required>
-      <label for="r4">4 ☆</label>
+                <div>
+                    <label for="r2">☆☆</label>
+                    <input type="radio" id="r2" name="rating" value="2">
+                </div>
 
-      <input type="radio" id="r5" name="rating" value="5" required>
-      <label for="r5">5 ☆</label>
+                <div>
+                    <label for="r3">☆☆☆</label>
+                    <input type="radio" id="r3" name="rating" value="3">
+                </div>
 
-    </fieldset>
+                <div>
+                    <label for="r4">☆☆☆☆</label>
+                    <input type="radio" id="r4" name="rating" value="4">
+                </div>
 
-    <!-- DATE -->
-    <label for="date">Date of Installation</label>
-    <input type="date" id="date" name="date" required>
+                <div>
+                    <label for="r5">☆☆☆☆☆</label>
+                    <input type="radio" id="r5" name="rating" value="5">
+                </div>
 
-    <!-- FEATURES -->
-    <fieldset>
-      <legend>Useful Features</legend>
+            </div>
+        </fieldset>
 
-      <input type="checkbox" id="f1" name="features" value="durability">
-      <label for="f1">Durability</label>
+        <!-- DATE -->
 
-      <input type="checkbox" id="f2" name="features" value="ease">
-      <label for="f2">Ease of Use</label>
+        <label for="date">Date of Installation</label>
+        <input type="date" id="date" name="date" required>
 
-      <input type="checkbox" id="f3" name="features" value="design">
-      <label for="f3">Design</label>
+        <!-- FEATURES -->
 
-      <input type="checkbox" id="f4" name="features" value="performance">
-      <label for="f4">Performance</label>
+        <fieldset class="features-group">
+            <legend>
+                Which features did you find useful in the product?
+                <br>
+                <em>(Check all that apply)</em>
+            </legend>
 
-    </fieldset>
+            <div>
+                <input type="checkbox" id="f1" name="features" value="durability">
+                <label for="f1">Durability</label>
+            </div>
 
-    <!-- REVIEW -->
-    <label for="review">Written Review</label>
-    <textarea id="review" name="review"></textarea>
+            <div>
+                <input type="checkbox" id="f2" name="features" value="ease">
+                <label for="f2">Ease of Use</label>
+            </div>
 
-    <!-- USER NAME -->
-    <label for="username">Your Name</label>
-    <input type="text" id="username" name="username">
+            <div>
+                <input type="checkbox" id="f3" name="features" value="performance">
+                <label for="f3">Performance</label>
+            </div>
 
-    <!-- SUBMIT -->
-    <input type="submit" value="Submit Review">
+            <div>
+                <input type="checkbox" id="f4" name="features" value="design">
+                <label for="f4">Design</label>
+            </div>
 
-  </form>
+        </fieldset>
+
+        <!-- REVIEW -->
+
+        <label for="review">
+            Written Review
+            <span class="optional">(Optional)</span>
+        </label>
+
+        <textarea id="review" name="review"></textarea>
+
+        <!-- NAME -->
+
+        <label for="username">
+            Your Name
+            <span class="optional">(Optional)</span>
+        </label>
+
+        <input type="text" id="username" name="username">
+
+        <!-- SUBMIT -->
+
+        <input type="submit" value="Post Review">
+
+    </form>
 
 </main>
 
 <footer>
-  <p>© <span id="year"></span> Product Review</p>
-  <p>Last Modified: <span id="lastModified"></span></p>
+    <p>© <span id="year"></span> Product Review</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
 </body>
