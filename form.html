@@ -6,7 +6,7 @@
 
   <title>Product Review Form</title>
 
-  <meta name="description" content="Product review form for evaluating industrial equipment products.">
+  <meta name="description" content="Product review form for industrial equipment evaluation and feedback submission.">
   <meta name="author" content="Nefi Moroni Escobedo Miranda">
 
   <link rel="stylesheet" href="styles/form.css">
@@ -29,23 +29,23 @@
       <option value="" disabled selected>Select a Product ...</option>
     </select>
 
-    <!-- RATING -->
+    <!-- RATING (FIXED) -->
     <fieldset>
       <legend>Overall Rating</legend>
 
       <input type="radio" id="r1" name="rating" value="1" required>
       <label for="r1">1 ☆</label>
 
-      <input type="radio" id="r2" name="rating" value="2">
+      <input type="radio" id="r2" name="rating" value="2" required>
       <label for="r2">2 ☆</label>
 
-      <input type="radio" id="r3" name="rating" value="3">
+      <input type="radio" id="r3" name="rating" value="3" required>
       <label for="r3">3 ☆</label>
 
-      <input type="radio" id="r4" name="rating" value="4">
+      <input type="radio" id="r4" name="rating" value="4" required>
       <label for="r4">4 ☆</label>
 
-      <input type="radio" id="r5" name="rating" value="5">
+      <input type="radio" id="r5" name="rating" value="5" required>
       <label for="r5">5 ☆</label>
 
     </fieldset>
@@ -76,7 +76,7 @@
     <label for="review">Written Review</label>
     <textarea id="review" name="review"></textarea>
 
-    <!-- USER -->
+    <!-- USER NAME -->
     <label for="username">Your Name</label>
     <input type="text" id="username" name="username">
 

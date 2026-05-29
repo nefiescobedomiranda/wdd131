@@ -38,7 +38,7 @@ fieldset {
   margin-top: 15px;
 }
 
-/* ⭐ REQUIRED MEDIA QUERY */
+/* REQUIRED MEDIA QUERY */
 @media (max-width: 600px) {
   form {
     padding: 12px;
