@@ -6,7 +6,7 @@
     .card {
         position: absolute;
         width: 320px;
-        background-color: #ffffffdd;
+        background-color: var(--transparent-white);
         border-radius: 0;
     }
 
@@ -30,7 +30,7 @@
     }
 
     .weather h2::after {
-        content: " ⛅";
+        content: " ☀";
     }
 
     .weather-icon {

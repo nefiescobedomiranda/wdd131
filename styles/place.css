@@ -5,6 +5,7 @@
     --white: #ffffff;
     --light: #f4f4f4;
     --shadow: #00000033;
+    --transparent-white: #ffffffdd;
 }
 
 * {
@@ -64,7 +65,6 @@ picture img {
 }
 
 footer {
-
     background-color: var(--green);
     color: var(--white);
     text-align: center;
