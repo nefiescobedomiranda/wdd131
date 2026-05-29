@@ -42,3 +42,24 @@ footer {
 	font-size: smaller;
 	text-align: right;
 }
+
+.banner {
+    overflow: hidden;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.banner p {
+    animation: mover 5s infinite alternate;
+}
+
+@keyframes mover {
+
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

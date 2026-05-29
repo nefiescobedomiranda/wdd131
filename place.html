@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rio de Janeiro</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Rio de Janeiro</h1>
+    </header>
+
+    <main>
+
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/rio-large.webp">
+            <img src="images/rio-small.webp" alt="Rio de Janeiro landscape">
+        </picture>
+
+        <section class="card data">
+            <h2>Data</h2>
+
+            <p><strong>Country:</strong> Brazil</p>
+            <p><strong>Population:</strong> 6.7 million</p>
+            <p><strong>Language:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real</p>
+            <p><strong>Time Zone:</strong> UTC-3</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+
+            <p><strong>Wind Speed:</strong> <span id="windspeed">10</span> km/h</p>
+
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            ©<span id="year"></span> 🌴 Rio de Janeiro 🌴 Brazil
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

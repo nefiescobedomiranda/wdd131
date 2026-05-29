@@ -1,0 +1,69 @@
+:root {
+    --green: #009739;
+    --yellow: #FFDF00;
+    --blue: #002776;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+picture img {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    background-color: var(--blue);
+    color: white;
+
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.weather-icon {
+    width: 70px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: var(--green);
+    color: white;
+
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
