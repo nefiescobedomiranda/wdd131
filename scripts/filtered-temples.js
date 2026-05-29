@@ -56,21 +56,28 @@ temples.push(
     location: "Santiago, Chile",
     dedicated: "1983, September, 15",
     area: 20831,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/800x500/santiago-chile-lds-temple-1085562-wallpaper.jpg"
   },
   {
     templeName: "Bogotá Colombia",
     location: "Bogotá, Colombia",
     dedicated: "1999, April, 24",
     area: 53500,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/400x250/bogota-colombia-temple-lds-273999-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/800x500/bogota-colombia-temple-lds-1029726-wallpaper.jpg"
   },
   {
     templeName: "Buenos Aires Argentina",
     location: "Buenos Aires, Argentina",
     dedicated: "1986, January, 17",
     area: 30659,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires/400x250/buenos-aires-temple-lds-273999-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/800x500/buenos-aires-argentina-temple-lds-236979-wallpaper.jpg"
+  }
+  {
+  templeName: "Caracas Venezuela",
+  location: "Caracas, Venezuela",
+  dedicated: "2000, August, 20",
+  area: 15332,
+  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/caracas-venezuela/800x450/caracas_venezuela_temple_detail_1691066_2400x1200.jpg"
   }
 );
 
