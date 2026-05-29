@@ -5,6 +5,7 @@ const products = [
   { id: "p4", name: "Grinding Mill" }
 ];
 
+// populate select
 const select = document.getElementById("product");
 
 products.forEach(product => {
@@ -12,4 +13,10 @@ products.forEach(product => {
   option.value = product.id;
   option.textContent = product.name;
   select.appendChild(option);
+});
+
+// footer info
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
 });

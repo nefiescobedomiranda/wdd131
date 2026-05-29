@@ -1,11 +1,12 @@
 let count = localStorage.getItem("reviewCount");
 
-if (!count) {
-  count = 0;
-}
-
-count = Number(count) + 1;
+count = count ? Number(count) + 1 : 1;
 
 localStorage.setItem("reviewCount", count);
 
 document.getElementById("counter").textContent = count;
+
+// footer year
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
