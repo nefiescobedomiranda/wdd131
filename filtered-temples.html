@@ -6,10 +6,8 @@
     <title>Filtered Temples</title>
     <meta name="description" content="Temple gallery with filtering and dynamic JavaScript rendering">
     <meta name="author" content="Nefi Moroni Escobedo Miranda">
-
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
-
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
@@ -31,11 +29,13 @@
 
 <main>
     <h2>Temple Gallery</h2>
-    <section class="gallery"></section>
+    <section class="gallery" aria-label="Temple gallery">
+        <h3 class="sr-only">Temple cards</h3>
+    </section>
 </main>
 
 <footer>
-    <p>© <span id="currentyear"></span> | Nefi Moroni Escobedo Miranda</p>
+    <p>© <span id="currentyear"></span> | Nefi Moroni Escobedo Miranda | Peru</p>
     <p id="lastModified"></p>
 </footer>
 </body>
