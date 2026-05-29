@@ -1,50 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-
     <title>Rio de Janeiro</title>
-
     <meta name="description"
         content="Explore Rio de Janeiro, Brazil, with information about its culture, weather, landmarks, and beautiful landscapes.">
-
     <meta name="author"
         content="Nefi Moroni Escobedo Miranda">
-
     <link rel="stylesheet"
         href="styles/place.css">
-
     <link rel="stylesheet"
         href="styles/place-large.css">
-
     <script
         src="scripts/place.js"
         defer>
     </script>
-
 </head>
 
 <body>
-
     <header>
-
         <h1>Rio de Janeiro</h1>
-
     </header>
-
+    
     <main>
-
         <picture>
-
             <source
                 media="(min-width: 800px)"
                 srcset="images/pexels-evandro-kluge-201796092-12271543.webp">
-
             <img
                 src="images/pexels-claiton-27914780.webp"
                 alt="Rio de Janeiro landscape"
@@ -52,15 +36,11 @@
                 decoding="async"
                 width="800"
                 height="500">
-
         </picture>
 
         <section class="card data">
-
             <h2>Data</h2>
-
             <div class="info">
-
                 <p>
                     <strong>Country:</strong>
                     Brazil
@@ -90,31 +70,24 @@
                     <strong>Famous Place:</strong>
                     Christ the Redeemer
                 </p>
-
             </div>
 
         </section>
-
+        
         <section class="card weather">
-
             <h2>Weather</h2>
-
             <img
                 src="images/weather.svg"
                 alt="Weather Icon"
                 class="weather-icon"
                 width="90"
                 height="90">
-
             <div class="info">
-
                 <p>
                     <strong>Temperature:</strong>
-
                     <span id="temperature">
                         8
                     </span>
-
                     °C
                 </p>
 
@@ -125,39 +98,27 @@
 
                 <p>
                     <strong>Wind Speed:</strong>
-
                     <span id="windspeed">
                         10
                     </span>
-
                     km/h
                 </p>
 
                 <p>
                     <strong>Wind Chill:</strong>
-
                     <span id="windchill"></span>
                 </p>
-
             </div>
-
         </section>
-
     </main>
-
+    
     <footer>
-
         <p>
             ©<span id="year"></span>
-
             🌴 Nefi Moroni Escobedo Miranda 🌴
-
             Rio de Janeiro
         </p>
-
         <p id="lastModified"></p>
-
     </footer>
-
 </body>
 </html>
