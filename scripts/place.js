@@ -1,3 +1,5 @@
+// scripts/place.js
+
 const temperature = 8;
 const windSpeed = 10;
 

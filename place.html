@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Rio de Janeiro</title>
-
+    <meta name="description" content="Rio de Janeiro country page project">
+    <meta name="author" content="Tu Nombre">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
-
     <script src="scripts/place.js" defer></script>
 </head>
-<body>
 
+<body>
     <header>
         <h1>Rio de Janeiro</h1>
     </header>
-
     <main>
-
         <picture>
-            <source media="(min-width: 800px)" srcset="images/rio-large.webp">
-            <img src="images/rio-small.webp" alt="Rio de Janeiro landscape">
+            <source media="(min-width: 800px)"
+                srcset="images/pexels-evandro-kluge-201796092-12271543.webp">
+            <img
+                src="images/pexels-claiton-27914780.webp"
+                alt="Rio de Janeiro Brazil">
         </picture>
-
         <section class="card data">
             <h2>Data</h2>
-
-            <p><strong>Country:</strong> Brazil</p>
-            <p><strong>Population:</strong> 6.7 million</p>
-            <p><strong>Language:</strong> Portuguese</p>
-            <p><strong>Currency:</strong> Brazilian Real</p>
-            <p><strong>Time Zone:</strong> UTC-3</p>
+            <div class="info">
+                <p><strong>Country:</strong> Brazil</p>
+                <p><strong>Population:</strong> 6.7 million</p>
+                <p><strong>Capital:</strong> Rio de Janeiro</p>
+                <p><strong>Language:</strong> Portuguese</p>
+                <p><strong>Currency:</strong> Brazilian Real</p>
+                <p><strong>Time Zone:</strong> UTC-3</p>
+                <p><strong>Famous Place:</strong> Christ the Redeemer</p>
+            </div>
         </section>
 
         <section class="card weather">
             <h2>Weather</h2>
 
-            <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+            <img
+                src="images/weather.svg"
+                alt="Weather Icon"
+                class="weather-icon">
 
-            <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+            <div class="info">
+                <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
 
-            <p><strong>Wind Speed:</strong> <span id="windspeed">10</span> km/h</p>
+                <p><strong>Conditions:</strong> Sunny</p>
 
-            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+                <p><strong>Wind:</strong> <span id="windspeed">10</span> km/h</p>
+
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </div>
         </section>
 
     </main>
 
     <footer>
         <p>
-            ©<span id="year"></span> 🌴 Rio de Janeiro 🌴 Brazil
+            ©<span id="year"></span>
+            🌴 Nefi Moroni Escobedo Miranda 🌴
+            Rio de Janeiro
         </p>
 
         <p id="lastModified"></p>
