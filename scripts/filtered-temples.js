@@ -1,4 +1,4 @@
-// MENU TOGGLE
+// MENU
 const menuButton = document.querySelector("#menu-button");
 const navMenu = document.querySelector("#nav-menu");
 
@@ -21,21 +21,21 @@ const temples = [
   },
   {
     templeName: "Manti Utah",
-    location: "Manti, Utah, United States",
+    location: "Manti, Utah, USA",
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
     templeName: "Payson Utah",
-    location: "Payson, Utah, United States",
+    location: "Payson, Utah, USA",
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
     templeName: "Washington D.C.",
-    location: "Kensington, Maryland, USA",
+    location: "Maryland, USA",
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
@@ -46,11 +46,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
-  }
-];
-
-// EXTRA TEMPLES (3 obligatorios)
-temples.push(
+  },
   {
     templeName: "Santiago Chile",
     location: "Santiago, Chile",
@@ -67,92 +63,74 @@ temples.push(
   },
   {
     templeName: "Buenos Aires Argentina",
-    location: "Buenos Aires, Argentina",
+    location: "Ciudad Evita, Argentina",
     dedicated: "1986, January, 17",
     area: 30659,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/800x500/buenos-aires-argentina-temple-lds-236979-wallpaper.jpg"
   },
   {
-  templeName: "Caracas Venezuela",
-  location: "Caracas, Venezuela",
-  dedicated: "2000, August, 20",
-  area: 15332,
-  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/caracas-venezuela/800x450/caracas_venezuela_temple_detail_1691066_2400x1200.jpg"
+    templeName: "Caracas Venezuela",
+    location: "Caracas, Venezuela",
+    dedicated: "2000, August, 20",
+    area: 15332,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/caracas-venezuela/800x450/caracas_venezuela_temple_detail_1691066_2400x1200.jpg"
   }
-);
+];
 
-// SELECTOR
+// GALLERY
 const gallery = document.querySelector(".gallery");
 
-// CREATE CARD
 function createTempleCard(temple) {
-    const card = document.createElement("figure");
+    const figure = document.createElement("figure");
 
     const img = document.createElement("img");
     img.src = temple.imageUrl;
     img.alt = temple.templeName;
     img.loading = "lazy";
 
-    const caption = document.createElement("figcaption");
-    caption.innerHTML = `
+    const figcaption = document.createElement("figcaption");
+    figcaption.innerHTML = `
         <h3>${temple.templeName}</h3>
         <p>${temple.location}</p>
         <p>${temple.dedicated}</p>
         <p>${temple.area.toLocaleString()} sq ft</p>
     `;
 
-    card.appendChild(img);
-    card.appendChild(caption);
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
 
-    return card;
+    return figure;
 }
 
-// RENDER FUNCTION (IMPORTANTE)
 function displayTemples(list) {
     gallery.innerHTML = "";
-    list.forEach(temple => {
-        gallery.appendChild(createTempleCard(temple));
-    });
+    list.forEach(t => gallery.appendChild(createTempleCard(t)));
 }
 
-// INITIAL LOAD
 displayTemples(temples);
 
-// FILTER HELP FUNCTION (evita errores de fecha)
-function getYear(dateString) {
-    return parseInt(dateString.split(",")[0]);
-}
-
 // FILTERS
-document.querySelector("#home").addEventListener("click", (e) => {
+document.querySelector("#home").addEventListener("click", e => {
     e.preventDefault();
     displayTemples(temples);
 });
 
-document.querySelector("#old").addEventListener("click", (e) => {
+document.querySelector("#old").addEventListener("click", e => {
     e.preventDefault();
-    displayTemples(
-        temples.filter(t => getYear(t.dedicated) < 1900)
-    );
+    displayTemples(temples.filter(t => parseInt(t.dedicated) < 1900));
 });
 
-document.querySelector("#new").addEventListener("click", (e) => {
+document.querySelector("#new").addEventListener("click", e => {
     e.preventDefault();
-    displayTemples(
-        temples.filter(t => getYear(t.dedicated) > 2000)
-    );
+    displayTemples(temples.filter(t => parseInt(t.dedicated) >= 2000));
 });
 
-document.querySelector("#large").addEventListener("click", (e) => {
+document.querySelector("#large").addEventListener("click", e => {
     e.preventDefault();
-    displayTemples(
-        temples.filter(t => t.area > 90000)
-    );
+    displayTemples(temples.filter(t => t.area > 90000));
 });
 
-document.querySelector("#small").addEventListener("click", (e) => {
+document.querySelector("#small").addEventListener("click", e => {
     e.preventDefault();
-    displayTemples(
-        temples.filter(t => t.area < 10000)
-    );
+    displayTemples(temples.filter(t => t.area < 10000));
 });

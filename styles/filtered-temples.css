@@ -22,18 +22,15 @@ header {
 }
 
 #menu-button {
-    font-size: 2rem;
     background: none;
     border: none;
     color: white;
-    cursor: pointer;
+    font-size: 2rem;
 }
 
 nav {
     display: none;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
 }
 
 nav.open {
@@ -42,6 +39,7 @@ nav.open {
 
 nav a {
     color: white;
+    padding: 1rem;
     text-decoration: none;
 }
 
@@ -60,19 +58,17 @@ main {
 figure {
     background: white;
     padding: 1rem;
-    border-radius: 10px;
     text-align: center;
 }
 
-img {
+figure img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
 }
 
 footer {
-    background: #003049;
-    color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    background: #003049;
+    color: white;
 }
