@@ -14,63 +14,63 @@ const temples = [
     location: "Aba, Nigeria",
     dedicated: "2005, August, 7",
     area: 11500,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
   },
   {
     templeName: "Manti Utah",
     location: "Manti, Utah, USA",
     dedicated: "1888, May, 21",
     area: 74792,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
     templeName: "Payson Utah",
     location: "Payson, Utah, USA",
     dedicated: "2015, June, 7",
     area: 96630,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
     templeName: "Washington D.C.",
     location: "Maryland, USA",
     dedicated: "1974, November, 19",
     area: 156558,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington-dc-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
   },
   {
     templeName: "Lima Peru",
     location: "Lima, Peru",
     dedicated: "1986, January, 10",
     area: 9600,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
   },
   {
     templeName: "Santiago Chile",
     location: "Santiago, Chile",
     dedicated: "1983, September, 15",
     area: 20831,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/400x250/santiago-chile-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/800x500/santiago-chile-lds-temple-1085562-wallpaper.jpg"
   },
   {
     templeName: "Bogotá Colombia",
     location: "Bogotá, Colombia",
     dedicated: "1999, April, 24",
     area: 53500,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/400x250/bogota-colombia-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/800x500/bogota-colombia-temple-lds-1029726-wallpaper.jpg"
   },
   {
     templeName: "Buenos Aires Argentina",
     location: "Ciudad Evita, Argentina",
     dedicated: "1986, January, 17",
     area: 30659,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-aires-argentina-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/800x500/buenos-aires-argentina-temple-lds-236979-wallpaper.jpg"
   },
   {
     templeName: "Caracas Venezuela",
     location: "Caracas, Venezuela",
     dedicated: "2000, August, 20",
     area: 15332,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/caracas-venezuela/400x250/caracas-venezuela-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/caracas-venezuela/800x450/caracas_venezuela_temple_detail_1691066_2400x1200.jpg"
   }
 ];
 
