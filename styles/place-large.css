@@ -1,31 +1,21 @@
-/* styles/place-large.css */
-
 @media screen and (min-width: 800px) {
-
     main {
         position: relative;
     }
 
     .card {
         position: absolute;
-
         width: 300px;
-
         background-color: rgba(255,255,255,0.85);
-
         border-radius: 0;
     }
 
     .card h2 {
         background-color: var(--blue);
         color: white;
-
         text-align: left;
-
         padding: 1rem;
-
         margin-left: -30px;
-
         width: 95%;
     }
 
