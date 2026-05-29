@@ -13,10 +13,13 @@ function calculateWindChill(temp, speed) {
 let windChill = "N/A";
 
 if (temperature <= 10 && windSpeed > 4.8) {
-    windChill = `${calculateWindChill(temperature, windSpeed)} °C`;
+
+    windChill =
+        `${calculateWindChill(temperature, windSpeed)} °C`;
 }
 
-document.getElementById("windchill").textContent = windChill;
+document.getElementById("windchill").textContent =
+    windChill;
 
 document.getElementById("year").textContent =
     new Date().getFullYear();

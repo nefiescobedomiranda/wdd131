@@ -3,6 +3,8 @@
     --yellow: #ffdf00;
     --blue: #002776;
     --white: #ffffff;
+    --light: #f4f4f4;
+    --shadow: #00000033;
 }
 
 * {
@@ -13,7 +15,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--light);
 }
 
 header {
@@ -30,24 +32,23 @@ header h1 {
 
 picture img {
     width: 100%;
-    display: block;
     height: auto;
+    display: block;
 }
 
 .card {
-    background-color: white;
+    background-color: var(--white);
     margin: 1rem;
     padding: 1.5rem;
-
     border-radius: 10px;
-
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px var(--shadow);
 }
 
 .card h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    color: var(--blue);
 }
 
 .info p {
@@ -63,10 +64,11 @@ picture img {
 }
 
 footer {
+
     background-color: var(--green);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 2rem;
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }

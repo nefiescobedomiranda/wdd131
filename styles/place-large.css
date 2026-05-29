@@ -5,28 +5,28 @@
 
     .card {
         position: absolute;
-        width: 300px;
-        background-color: rgba(255,255,255,0.85);
+        width: 320px;
+        background-color: #ffffffdd;
         border-radius: 0;
     }
 
     .card h2 {
         background-color: var(--blue);
-        color: white;
-        text-align: left;
+        color: var(--white);
         padding: 1rem;
+        text-align: left;
         margin-left: -30px;
         width: 95%;
     }
 
     .data {
         top: 40px;
-        left: 20px;
+        left: 30px;
     }
 
     .weather {
         bottom: 40px;
-        right: 20px;
+        right: 30px;
     }
 
     .weather h2::after {
@@ -35,9 +35,5 @@
 
     .weather-icon {
         display: none;
-    }
-
-    footer {
-        margin-top: -5px;
     }
 }
