@@ -31,7 +31,7 @@ const temples = [
     location: "Payson, Utah, United States",
     dedicated: "2015, June, 7",
     area: 96630,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
     templeName: "Washington D.C.",
@@ -49,32 +49,32 @@ const temples = [
   }
 ];
 
-// EXTRA TEMPLES (3 OBLIGATORIOS)
+// EXTRA TEMPLES (3 obligatorios)
 temples.push(
   {
     templeName: "Santiago Chile",
     location: "Santiago, Chile",
     dedicated: "1983, September, 15",
-    area: 9600,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/400x250/santiago-chile-temple.jpg"
+    area: 20831,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
   },
   {
-    templeName: "Bogota Colombia",
+    templeName: "Bogotá Colombia",
     location: "Bogotá, Colombia",
     dedicated: "1999, April, 24",
-    area: 53898,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/400x250/bogota-colombia-temple.jpg"
+    area: 53500,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/400x250/bogota-colombia-temple-lds-273999-wallpaper.jpg"
   },
   {
     templeName: "Buenos Aires Argentina",
     location: "Buenos Aires, Argentina",
     dedicated: "1986, January, 17",
     area: 30659,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires/400x250/buenos-aires-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires/400x250/buenos-aires-temple-lds-273999-wallpaper.jpg"
   }
 );
 
-// SELECT
+// SELECTOR
 const gallery = document.querySelector(".gallery");
 
 // CREATE CARD
@@ -91,7 +91,7 @@ function createTempleCard(temple) {
         <h3>${temple.templeName}</h3>
         <p>${temple.location}</p>
         <p>${temple.dedicated}</p>
-        <p>${temple.area} sq ft</p>
+        <p>${temple.area.toLocaleString()} sq ft</p>
     `;
 
     card.appendChild(img);
@@ -100,39 +100,51 @@ function createTempleCard(temple) {
     return card;
 }
 
-// DISPLAY FUNCTION
+// RENDER FUNCTION (IMPORTANTE)
 function displayTemples(list) {
     gallery.innerHTML = "";
-    list.forEach(t => gallery.appendChild(createTempleCard(t)));
+    list.forEach(temple => {
+        gallery.appendChild(createTempleCard(temple));
+    });
 }
 
 // INITIAL LOAD
 displayTemples(temples);
 
+// FILTER HELP FUNCTION (evita errores de fecha)
+function getYear(dateString) {
+    return parseInt(dateString.split(",")[0]);
+}
+
 // FILTERS
-document.querySelector("#home").addEventListener("click", () => {
+document.querySelector("#home").addEventListener("click", (e) => {
+    e.preventDefault();
     displayTemples(temples);
 });
 
-document.querySelector("#old").addEventListener("click", () => {
+document.querySelector("#old").addEventListener("click", (e) => {
+    e.preventDefault();
     displayTemples(
-        temples.filter(t => new Date(t.dedicated).getFullYear() < 1900)
+        temples.filter(t => getYear(t.dedicated) < 1900)
     );
 });
 
-document.querySelector("#new").addEventListener("click", () => {
+document.querySelector("#new").addEventListener("click", (e) => {
+    e.preventDefault();
     displayTemples(
-        temples.filter(t => new Date(t.dedicated).getFullYear() > 2000)
+        temples.filter(t => getYear(t.dedicated) > 2000)
     );
 });
 
-document.querySelector("#large").addEventListener("click", () => {
+document.querySelector("#large").addEventListener("click", (e) => {
+    e.preventDefault();
     displayTemples(
         temples.filter(t => t.area > 90000)
     );
 });
 
-document.querySelector("#small").addEventListener("click", () => {
+document.querySelector("#small").addEventListener("click", (e) => {
+    e.preventDefault();
     displayTemples(
         temples.filter(t => t.area < 10000)
     );
