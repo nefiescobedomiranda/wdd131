@@ -142,3 +142,8 @@ footer {
         gap: 10px;
     }
 }
+
+.required {
+    color: #c00000;
+    font-weight: bold;
+}
