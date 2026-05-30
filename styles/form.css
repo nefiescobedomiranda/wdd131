@@ -11,8 +11,6 @@ body {
     padding: 10px;
 }
 
-/* HEADER */
-
 header {
     max-width: 800px;
     margin: 0 auto 15px;
@@ -26,14 +24,10 @@ header h1 {
     font-size: 2rem;
 }
 
-/* MAIN */
-
 main {
     max-width: 800px;
     margin: auto;
 }
-
-/* FORM */
 
 form {
     background-color: #d9d3d9;
@@ -63,21 +57,15 @@ textarea {
     resize: vertical;
 }
 
-/* OPTIONAL TEXT */
-
 .optional {
     color: #1d4ed8;
     font-size: 0.9rem;
 }
 
-/* FIELDSETS */
-
 fieldset {
     border: none;
     margin-top: 20px;
 }
-
-/* RATING */
 
 .rating-options {
     display: flex;
@@ -101,8 +89,6 @@ fieldset {
     width: auto;
 }
 
-/* FEATURES */
-
 .features-group div {
     margin-bottom: 10px;
 }
@@ -116,8 +102,6 @@ fieldset {
     display: inline;
     font-weight: normal;
 }
-
-/* BUTTON */
 
 input[type="submit"] {
     width: 100%;
@@ -134,15 +118,11 @@ input[type="submit"]:hover {
     background: #ddd;
 }
 
-/* CONFIRMATION */
-
 .confirmation {
     background: white;
     padding: 20px;
     text-align: center;
 }
-
-/* FOOTER */
 
 footer {
     max-width: 800px;
@@ -156,8 +136,6 @@ footer {
 footer p {
     margin: 5px 0;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 600px) {
 
