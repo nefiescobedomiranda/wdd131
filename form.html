@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Product Review</title>
-
     <meta name="description" content="Product review form for industrial equipment evaluation and feedback submission.">
     <meta name="author" content="Nefi Moroni Escobedo Miranda">
-
     <link rel="stylesheet" href="styles/form.css">
     <script defer src="scripts/form.js"></script>
 </head>
@@ -20,22 +17,14 @@
 </header>
 
 <main>
-
     <form action="review.html" method="get">
-
-        <!-- PRODUCT NAME -->
-
         <label for="product">Product Name</label>
-
         <select id="product" name="product" required>
             <option value="" disabled selected>Select a Product ...</option>
         </select>
 
-        <!-- RATING -->
-
         <fieldset class="rating-group">
             <legend>Overall Rating</legend>
-
             <div class="rating-options">
 
                 <div>
@@ -66,20 +55,14 @@
             </div>
         </fieldset>
 
-        <!-- DATE -->
-
         <label for="date">Date of Installation</label>
-
         <input
             type="date"
             id="date"
             name="date"
             required>
 
-        <!-- FEATURES -->
-
         <fieldset class="features-group">
-
             <legend>
                 Which features did you find useful in the product?
                 <br>
@@ -105,10 +88,7 @@
                 <input type="checkbox" id="f4" name="features" value="design">
                 <label for="f4">Design</label>
             </div>
-
         </fieldset>
-
-        <!-- REVIEW -->
 
         <label for="review">
             Written Review
@@ -121,8 +101,6 @@
             rows="5">
         </textarea>
 
-        <!-- USER NAME -->
-
         <label for="username">
             Your Name
             <span class="optional">(Optional)</span>
@@ -133,8 +111,6 @@
             id="username"
             name="username">
 
-        <!-- SUBMIT -->
-
         <input
             type="submit"
             value="Post Review">
@@ -144,7 +120,7 @@
 </main>
 
 <footer>
-    <p>© <span id="year"></span> Product Review</p>
+    <p>© <span id="year"></span> Nefi Moroni Escobedo Miranda </p>
     <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
