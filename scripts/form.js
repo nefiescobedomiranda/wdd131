@@ -1,8 +1,20 @@
 const products = [
-    { id: "p1", name: "Industrial Pump" },
-    { id: "p2", name: "Steel Crusher" },
-    { id: "p3", name: "Conveyor Belt" },
-    { id: "p4", name: "Grinding Mill" }
+    {
+        id: "p1",
+        name: "Industrial Pump"
+    },
+    {
+        id: "p2",
+        name: "Steel Crusher"
+    },
+    {
+        id: "p3",
+        name: "Conveyor Belt"
+    },
+    {
+        id: "p4",
+        name: "Grinding Mill"
+    }
 ];
 
 const select = document.getElementById("product");

@@ -48,13 +48,11 @@ input[type="text"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #cfcfcf;
-    background: white;
+    border: 1px solid #ccc;
 }
 
 textarea {
     min-height: 120px;
-    resize: vertical;
 }
 
 .optional {
@@ -79,14 +77,13 @@ fieldset {
     align-items: center;
 }
 
-.rating-options label {
-    margin-bottom: 6px;
-    margin-top: 0;
-    font-weight: normal;
-}
-
 .rating-options input {
     width: auto;
+}
+
+.rating-options label {
+    margin: 0 0 6px 0;
+    font-weight: normal;
 }
 
 .features-group div {
@@ -107,21 +104,10 @@ input[type="submit"] {
     width: 100%;
     margin-top: 25px;
     padding: 14px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     border: 1px solid #999;
-    background: #efefef;
     cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background: #ddd;
-}
-
-.confirmation {
-    background: white;
-    padding: 20px;
-    text-align: center;
 }
 
 footer {
@@ -133,8 +119,10 @@ footer {
     padding: 15px;
 }
 
-footer p {
-    margin: 5px 0;
+.confirmation {
+    background: white;
+    padding: 25px;
+    text-align: center;
 }
 
 @media (max-width: 600px) {

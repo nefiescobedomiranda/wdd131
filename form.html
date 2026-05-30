@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Product Review</title>
+
     <meta name="description" content="Product review form for industrial equipment evaluation and feedback submission.">
     <meta name="author" content="Nefi Moroni Escobedo Miranda">
 
@@ -18,14 +20,24 @@
 </header>
 
 <main>
+
     <form action="review.html" method="get">
+
+        <!-- PRODUCT NAME -->
+
         <label for="product">Product Name</label>
+
         <select id="product" name="product" required>
-            <option value="" disabled selected>Choose a Product ...</option>
+            <option value="" disabled selected>Select a Product ...</option>
         </select>
+
+        <!-- RATING -->
+
         <fieldset class="rating-group">
             <legend>Overall Rating</legend>
+
             <div class="rating-options">
+
                 <div>
                     <label for="r1">☆</label>
                     <input type="radio" id="r1" name="rating" value="1" required>
@@ -33,31 +45,41 @@
 
                 <div>
                     <label for="r2">☆☆</label>
-                    <input type="radio" id="r2" name="rating" value="2">
+                    <input type="radio" id="r2" name="rating" value="2" required>
                 </div>
 
                 <div>
                     <label for="r3">☆☆☆</label>
-                    <input type="radio" id="r3" name="rating" value="3">
+                    <input type="radio" id="r3" name="rating" value="3" required>
                 </div>
 
                 <div>
                     <label for="r4">☆☆☆☆</label>
-                    <input type="radio" id="r4" name="rating" value="4">
+                    <input type="radio" id="r4" name="rating" value="4" required>
                 </div>
 
                 <div>
                     <label for="r5">☆☆☆☆☆</label>
-                    <input type="radio" id="r5" name="rating" value="5">
+                    <input type="radio" id="r5" name="rating" value="5" required>
                 </div>
 
             </div>
         </fieldset>
 
+        <!-- DATE -->
+
         <label for="date">Date of Installation</label>
-        <input type="date" id="date" name="date" required>
+
+        <input
+            type="date"
+            id="date"
+            name="date"
+            required>
+
+        <!-- FEATURES -->
 
         <fieldset class="features-group">
+
             <legend>
                 Which features did you find useful in the product?
                 <br>
@@ -86,21 +108,36 @@
 
         </fieldset>
 
+        <!-- REVIEW -->
+
         <label for="review">
             Written Review
             <span class="optional">(Optional)</span>
         </label>
 
-        <textarea id="review" name="review"></textarea>
+        <textarea
+            id="review"
+            name="review"
+            rows="5">
+        </textarea>
+
+        <!-- USER NAME -->
 
         <label for="username">
             Your Name
             <span class="optional">(Optional)</span>
         </label>
 
-        <input type="text" id="username" name="username">
+        <input
+            type="text"
+            id="username"
+            name="username">
 
-        <input type="submit" value="Post Review">
+        <!-- SUBMIT -->
+
+        <input
+            type="submit"
+            value="Post Review">
 
     </form>
 
