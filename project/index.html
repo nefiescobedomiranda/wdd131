@@ -3,46 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Educational site about mineral processing equipment in concentrator plants.">
-<title>Mineral Processing Equipment</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/project.css">
-<script defer src="scripts/project.js"></script>
+<title>Mining Education Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
 </head>
 
 <body>
-<header>
-<h1>Mineral Processing Equipment</h1>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="equipment.html">Equipment</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
+<!-- HEADER -->
+<header class="header">
+
+  <div class="logo-box">
+    <img src="images/logo.jpg" class="logo">
+    <span class="logo-text">Mining Education Platform</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="plant.html">Plant & Jobs</a>
+    <a href="global.html">Global Mines</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
 </header>
 
 <main>
+
 <section class="hero">
-<h2>From Ore to Concentrate</h2>
-<p>Mineral processing transforms raw ore into valuable mineral concentrates.</p>
-<img src="images/plant.jpg" alt="Plant" loading="lazy">
+
+  <div class="hero-content">
+    <h1>Mining & Mineral Processing Education</h1>
+
+    <p>
+      This platform provides educational information about global mining operations,
+      mineral processing equipment, job roles in mining plants, and how raw ore is transformed
+      into valuable mineral concentrates.
+    </p>
+
+    <a href="plant.html" class="btn">Explore the System</a>
+  </div>
+
+  <img src="images/plant.jpg" class="hero-img">
+
 </section>
 
-<section class="info">
-<h2>Welcome</h2>
-<p>This site explains key equipment used in concentrator plants.</p>
+<!-- PROCESS -->
+<section class="process">
+
+  <h2>How Mineral Processing Works</h2>
+
+  <p class="process-subtitle">
+    From raw ore extraction to final mineral concentrate
+  </p>
+
+  <img src="images/process.png" class="process-img">
+
 </section>
 
-<section class="visit">
-<h2>Visitor Info</h2>
-<p id="visitMessage"></p>
+<!-- SUMMARY BLOCKS -->
+<section class="grid-preview">
+
+  <div class="preview-card">
+    <h3>Plant & Jobs</h3>
+    <p>Equipment and operator roles inside mineral processing plants.</p>
+    <a href="plant.html">View</a>
+  </div>
+
+  <div class="preview-card">
+    <h3>Global Mines</h3>
+    <p>Real mining operations around the world with production data.</p>
+    <a href="global.html">View</a>
+  </div>
+
 </section>
+
 </main>
 
 <footer>
-<p>&copy; 2026 Mineral Processing Education</p>
+  <p>Educational Mining & Mineral Processing Platform</p>
 </footer>
+
 </body>
 </html>

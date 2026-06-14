@@ -1,60 +1,55 @@
-// ===== OBJECT + ARRAY =====
-const equipment = [
-{
-name: "Jaw Crusher",
-type: "Crushing",
-description: "Reduces large rocks into smaller pieces."
-},
-{
-name: "Ball Mill",
-type: "Grinding",
-description: "Grinds ore into fine powder."
-},
-{
-name: "Flotation Cell",
-type: "Separation",
-description: "Separates minerals using chemical processes."
-}
-];
+document.addEventListener("DOMContentLoaded", () => {
 
-// ===== DOM MANIPULATION =====
-const container = document.querySelector("#equipmentContainer");
+  /* =========================
+     1. LAST VISIT SYSTEM
+  ========================= */
 
-if (container) {
-equipment.forEach(item => {
-container.innerHTML += `
-<div class="card">
-<h3>${item.name}</h3>
-<p><strong>Type:</strong> ${item.type}</p>
-<p>${item.description}</p>
-</div>
-`;
+  const visitMessage = document.getElementById("visitMessage");
+  const lastVisit = document.getElementById("lastVisit");
+
+  if (visitMessage) {
+    const now = new Date().toLocaleString();
+
+    const savedVisit = localStorage.getItem("lastVisit");
+
+    if (!savedVisit) {
+      visitMessage.textContent = "Welcome to the Mining Education Platform.";
+    } else {
+      visitMessage.textContent = "Welcome back to the Mining Education Platform.";
+      lastVisit.textContent = "Last visit: " + savedVisit;
+    }
+
+    localStorage.setItem("lastVisit", now);
+  }
+
+
+  /* =========================
+     2. FORM FEEDBACK MESSAGE
+  ========================= */
+
+  const form = document.querySelector("form");
+
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      alert("Thank you! Your feedback has been received.");
+
+      form.reset();
+    });
+  }
+
+
+  /* =========================
+     3. ACTIVE NAV LINK (optional polish)
+  ========================= */
+
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+
 });
-}
-
-// ===== LOCAL STORAGE + CONDITIONAL =====
-let visits = Number(localStorage.getItem("visits")) || 0;
-visits++;
-localStorage.setItem("visits", visits);
-
-const visitMessage = document.querySelector("#visitMessage");
-
-if (visitMessage) {
-if (visits === 1) {
-visitMessage.textContent = `Welcome! This is your first visit.`;
-} else {
-visitMessage.textContent = `Welcome back! You have visited ${visits} times.`;
-}
-}
-
-// ===== FORM HANDLING =====
-const form = document.querySelector("#contactForm");
-
-if (form) {
-form.addEventListener("submit", (e) => {
-e.preventDefault();
-document.querySelector("#formMessage").textContent =
-`Thank you for your message! We will respond soon.`;
-form.reset();
-});
-}
