@@ -1,43 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Global Mines</title>
-  <link rel="stylesheet" href="styles/styles.css">
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Explore ten of the world's most important mining operations and learn about copper, gold, iron and diamond production.">
+
+<title>Global Mines | Mineral Education</title>
+
+<link
+rel="stylesheet"
+href="styles/styles.css">
+
 </head>
 
 <body>
 
 <header class="navbar">
+
   <div class="logo">
-    <img src="assets/logo.jpg" alt="logo" loading="lazy">
+
+    <img
+      src="assets/logo.jpg"
+      alt="Mineral Education Logo">
+
   </div>
 
-  <nav>
+  <nav aria-label="Main Navigation">
+
     <a href="index.html">Home</a>
     <a href="plant-process.html">Plant Process</a>
     <a href="global-mines.html">Global Mines</a>
     <a href="feedback.html">Feedback</a>
+
   </nav>
+
 </header>
 
+<main>
+
 <section class="section">
+
   <h1>Top 10 Global Mines</h1>
-  <p>Important mining operations around the world</p>
+
+  <p>
+    Explore some of the most important mining operations in the world and
+    learn about the minerals that support modern industries.
+  </p>
+
+  <br>
+
+  <label for="mineFilter">
+    Filter mines by mineral:
+  </label>
+
+  <select id="mineFilter">
+
+    <option value="all">
+      All Mines
+    </option>
+
+    <option value="Copper">
+      Copper
+    </option>
+
+    <option value="Gold">
+      Gold
+    </option>
+
+    <option value="Iron">
+      Iron
+    </option>
+
+    <option value="Diamonds">
+      Diamonds
+    </option>
+
+  </select>
+
 </section>
 
 <section class="section dark">
-  <div class="grid"></div>
+
+  <div id="minesContainer" class="grid"></div>
+
 </section>
 
+</main>
+
 <script src="js/script.js"></script>
+
 <footer class="footer">
 
   <div class="footer-container">
 
     <div class="footer-column">
 
-      <img src="assets/logo.jpg" alt="Logo" class="footer-logo">
+      <img
+        src="assets/logo.jpg"
+        alt="Mineral Education Logo"
+        class="footer-logo"
+        loading="lazy">
 
       <p>
         Educational platform focused on mining,
@@ -54,6 +124,7 @@
       <a href="plant-process.html">Plant Process</a>
       <a href="global-mines.html">Global Mines</a>
       <a href="feedback.html">Feedback</a>
+      <a href="references.html">References</a>
 
     </div>
 
@@ -73,10 +144,9 @@
 
       <h3>Contact</h3>
 
-      <p>Email:</p>
       <p>info@mineraleducation.com</p>
 
-      <p style="margin-top:15px;">
+      <p>
         Mineral Processing Education Project
       </p>
 
@@ -89,5 +159,6 @@
   </div>
 
 </footer>
+
 </body>
 </html>
