@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Copper",
       type: "Open-pit",
       owner: "BHP",
-      img: "assets/escondida.jpg",
+      img: "images/escondida.jpg",
       desc: "Largest copper mine in the world."
     },
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Gold & Copper",
       type: "Open-pit",
       owner: "Freeport",
-      img: "assets/grasberg.jpg",
+      img: "images/grasberg.jpg",
       desc: "One of the largest gold mines."
     },
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Copper",
       type: "Open-pit",
       owner: "Rio Tinto",
-      img: "assets/bingham.jpg",
+      img: "images/bingham.jpg",
       desc: "Deepest open-pit mine."
     },
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Copper",
       type: "Open-pit",
       owner: "Codelco",
-      img: "assets/chuquicamata.jpg",
+      img: "images/chuquicamata.jpg",
       desc: "Historic copper mine."
     },
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Gold",
       type: "Underground",
       owner: "Harmony Gold",
-      img: "assets/mponeng.jpg",
+      img: "images/mponeng.jpg",
       desc: "Deepest mine in the world."
     },
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Gold",
       type: "Open-pit",
       owner: "Navoi",
-      img: "assets/muruntau.jpg",
+      img: "images/muruntau.jpg",
       desc: "Huge gold deposit."
     },
 
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Iron",
       type: "Open-pit",
       owner: "Vale",
-      img: "assets/carajas.jpg",
+      img: "images/carajas.jpg",
       desc: "Richest iron ore mine."
     },
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Copper/Zinc",
       type: "Underground",
       owner: "Glencore",
-      img: "assets/kidd.jpg",
+      img: "images/kidd.jpg",
       desc: "Deep base metal mine."
     },
 
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Uranium/Copper",
       type: "Underground",
       owner: "BHP",
-      img: "assets/olympic.jpg",
+      img: "images/olympic.jpg",
       desc: "Multi-metal giant deposit."
     },
 
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mineral: "Diamonds",
       type: "Open-pit",
       owner: "Rio Tinto",
-      img: "assets/diavik.jpg",
+      img: "images/diavik.jpg",
       desc: "Famous diamond mine."
     }
 
